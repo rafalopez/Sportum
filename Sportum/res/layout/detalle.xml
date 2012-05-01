@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical" >
+	        
+		    <ImageView
+		        android:id="@+id/detalle_actividad_img"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="12dp"
+		        android:background="@color/blanco"
+		        android:tint="@color/negro"
+		        android:src="@drawable/ic_actividad_ciclismo" />
+		    
+		    <TextView
+		        android:id="@+id/detalle_actividad_txt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/actividad_caminar"
+		        style="@style/texto_contador_detalle" />
+	    </LinearLayout>
+	    
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/ancho_separador_vertical"
+	        android:background="@color/gris_03" />
+	    
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/titulo_fecha"
+		        android:layout_alignParentLeft="true"
+		        style="@style/texto_titulo_contador_detalle" />
+		    <TextView
+		        android:id="@+id/detalle_fecha_txt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="00/00/0000"
+		        android:layout_alignParentRight="true"
+		        style="@style/texto_contador_detalle" />
+		</RelativeLayout>
+	    
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/ancho_separador_vertical"
+	        android:background="@color/gris_03" />
+	    
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/titulo_tiempo"
+		        android:layout_alignParentLeft="true"
+		        style="@style/texto_titulo_contador_detalle" />
+		    <TextView
+		        android:id="@+id/detalle_tiempo_txt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/contador_tiempo_ini"
+		        android:layout_alignParentRight="true"
+		        style="@style/texto_contador_detalle" />
+		</RelativeLayout>
+		
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/ancho_separador_vertical"
+	        android:background="@color/gris_03" />
+	    
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/titulo_distancia"
+		        android:layout_alignParentLeft="true"
+		        style="@style/texto_titulo_contador_detalle" />
+		    <TextView
+		        android:id="@+id/detalle_distancia_unidades_txt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="4dp"
+		        android:text="@string/unidades_distancia"
+		        android:layout_alignParentRight="true"
+		        style="@style/texto_contador_detalle" />
+		    <TextView
+		        android:id="@+id/detalle_distancia_txt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/contador_distancia_ini"
+		        android:layout_toLeftOf="@id/detalle_distancia_unidades_txt"
+		        style="@style/texto_contador_detalle" />
+		</RelativeLayout>
+		
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/ancho_separador_vertical"
+	        android:background="@color/gris_03" />
+	    
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/titulo_velocidad"
+		        android:layout_alignParentLeft="true"
+		        style="@style/texto_titulo_contador_detalle" />
+		    <TextView
+		        android:id="@+id/detalle_velocidad_unidades_txt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="4dp"
+		        android:text="@string/unidades_velocidad"
+		        android:layout_alignParentRight="true"
+		        style="@style/texto_contador_detalle" />
+		    <TextView
+		        android:id="@+id/detalle_velocidad_txt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/contador_velocidad_ini"
+		        android:layout_toLeftOf="@id/detalle_velocidad_unidades_txt"
+		        style="@style/texto_contador_detalle" />
+		</RelativeLayout>
+		
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/ancho_separador_vertical"
+	        android:background="@color/gris_03" />
+	    
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/titulo_vueltas"
+		        android:layout_alignParentLeft="true"
+		        style="@style/texto_titulo_contador_detalle" />
+		    <TextView
+		        android:id="@+id/detalle_vueltas_txt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/contador_vueltas_ini"
+		        android:layout_alignParentRight="true"
+		        style="@style/texto_contador_detalle" />
+		</RelativeLayout>
+		
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/ancho_separador_vertical"
+	        android:background="@color/gris_03" />
+	    
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/titulo_energia"
+		        android:layout_alignParentLeft="true"
+		        style="@style/texto_titulo_contador_detalle" />
+		    <TextView
+		        android:id="@+id/detalle_energia_unidades_txt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="4dp"
+		        android:text="@string/unidades_energia"
+		        android:layout_alignParentRight="true"
+		        style="@style/texto_contador_detalle" />
+		    <TextView
+		        android:id="@+id/detalle_energia_txt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/contador_energia_ini"
+		        android:layout_toLeftOf="@id/detalle_energia_unidades_txt"
+		        style="@style/texto_contador_detalle" />
+		</RelativeLayout>
+	</LinearLayout>
+</ScrollView>

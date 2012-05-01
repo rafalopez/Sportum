@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Contadores -->
+    <string name="app_name">Sportum</string>
+    <string name="titulo_pantalla_configuracion">Settings</string>
+    <string name="titulo_pantalla_listado">Activity list</string>
+    <string name="titulo_pantalla_detalle">Activity detail</string>
+    <string name="titulo_pantalla_mapa_recorrido">Route</string>
+    <string name="btn_ir_a_mapa">Map &gt;</string>
+    <string name="titulo_fecha">Date</string>
+    <string name="titulo_tiempo">Time</string>
+    <string name="titulo_distancia">Distance</string>
+    <string name="titulo_velocidad">Speed</string>
+    <string name="titulo_vueltas">Lap count</string>
+    <string name="titulo_energia">Energy</string>
+    <string name="contador_tiempo_ini">00:00:00</string>
+    <string name="contador_distancia_ini">0.00</string>
+    <string name="contador_velocidad_ini">0.0</string>
+    <string name="contador_vueltas_ini">0</string>
+    <string name="contador_energia_ini">0</string>
+    <string name="unidades_distancia">Km</string>
+    <string name="unidades_velocidad">Km/h</string>
+    <string name="unidades_energia">Kcal</string>
+    <string name="btn_comenzar">Start</string>
+    <string name="btn_terminar">Finish</string>
+    
+    <string name="btn_aceptar">OK</string>
+    <string name="btn_cancelar">Cancel</string>
+    
+    <!-- Mapa -->
+    <string name="btn_ir_a_contadores">&lt; Counters</string>
+    
+    <!-- Preferencias -->
+    <!-- Claves -->
+    <string name="usuario_nombre_key">usuario_nombre</string>
+    <string name="usuario_genero_key">usuario_genero</string>
+    <string name="usuario_peso_key">usuario_peso</string>
+    <string name="usuario_edad_key">usuario_edad</string>
+    <string name="usuario_fecha_nacimiento_anyo_key">usuario_fecha_nacimiento_anyo</string>
+    <string name="usuario_fecha_nacimiento_mes_key">usuario_fecha_nacimiento_mes</string>
+    <string name="usuario_fecha_nacimiento_dia_key">usuario_fecha_nacimiento_dia</string>
+    <string name="tipo_actividad_key">tipo_actividad</string>
+    <string name="tipo_objetivo_key">tipo_objetivo</string>
+    <string name="objetivo_desactivado_key">objetivo_desactivado</string>
+    <string name="objetivo_tiempo_key">objetivo_tiempo</string>
+    <string name="objetivo_horas_key">objetivo_horas</string>
+    <string name="objetivo_minutos_key">objetivo_minutos</string>
+    <string name="objetivo_distancia_key">objetivo_distancia</string>
+    <string name="objetivo_vueltas_key">objetivo_vueltas</string>
+    <string name="objetivo_energia_key">objetivo_energia</string>
+    <string name="info_audio_desactivado_key">info_audio_desactivado</string>
+    <string name="info_audio_activado_key">info_audio_activado</string>
+    <string name="tipo_frecuencia_key">tipo_frecuencia</string>
+    <string name="frecuencia_tiempo_key">frecuencia_tiempo</string>
+    <string name="frecuencia_horas_key">frecuencia_horas</string>
+    <string name="frecuencia_minutos_key">frecuencia_minutos</string>
+    <string name="frecuencia_distancia_key">frecuencia_distancia</string>
+    <string name="frecuencia_vueltas_key">frecuencia_vueltas</string>
+    <string name="frecuencia_energia_key">frecuencia_energia</string>
+    <string name="info_tiempo_key">info_tiempo</string>
+    <string name="info_distancia_key">info_distancia</string>
+    <string name="info_vueltas_key">info_vueltas</string>
+    <string name="info_energia_key">info_energia</string>
+    <string name="gps_key">gps</string>
+    <string name="pantalla_orientacion_key">pantalla_orientacion</string>
+    <string name="pantalla_mantener_encendida_key">pantalla_mantener_encendida</string>
+    <string name="pantalla_completa_key">pantalla_completa</string>
+    <string name="acerca_de_key">acerca_de</string>
+    <!-- Títulos -->
+    <string name="usuario_title">User</string>
+    <string name="usuario_nombre_title">User name</string>
+    <string name="usuario_genero_title">Gender</string>
+    <string name="usuario_peso_title">Weight</string>
+    <string name="usuario_edad_title">Age</string>
+    <string name="usuario_fecha_nacimiento_title">Birth Date</string>
+    <string name="actividad_title">Activity</string>
+    <string name="tipo_actividad_title">Type of activity</string>
+    <string name="objetivo_title">Objective</string>
+    <string name="tipo_objetivo_title">Type of objective</string>
+    <string name="objetivo_tiempo_title">Time</string>
+    <string name="objetivo_tiempo_title_dialogo">Time (hh:mm)</string>
+    <string name="objetivo_distancia_title">Distance</string>
+    <string name="objetivo_vueltas_title">Lap count</string>
+    <string name="objetivo_energia_title">Energy</string>
+    <string name="info_audio_title">Audio information</string>
+    <string name="info_audio_cuando_title">When is played the audio information</string>
+    <string name="tipo_frecuencia_title">Type of frequency</string>
+    <string name="frecuencia_tiempo_title">Time</string>
+    <string name="frecuencia_tiempo_title_dialogo">Time (hh:mm)</string>
+    <string name="frecuencia_distancia_title">Distance</string>
+    <string name="frecuencia_vueltas_title">Lap count</string>
+    <string name="frecuencia_energia_title">Energy</string>
+    <string name="info_audio_que_title">What kind of audio information is played</string>
+    <string name="info_tiempo_title">Time</string>
+    <string name="info_distancia_title">Distance</string>
+    <string name="info_vueltas_title">Lap count</string>
+    <string name="info_energia_title">Energy</string>
+    <string name="gps_title">GPS</string>
+    <string name="pantalla_orientacion_title">Orientation</string>
+    <string name="pantalla_mantener_encendida_title">Keep screen on</string>
+    <string name="pantalla_completa_title">Fullscreen</string>
+    <string name="otras_opciones_title">Other options</string>
+    <string name="acerca_de_title">About</string>
+    <!-- Valores por defecto -->
+    <string name="usuario_nombre_default">Sportum</string>
+    <string name="usuario_genero_default">genero_m</string>
+    <string name="tipo_actividad_default">actividad_caminar</string>
+    <string name="tipo_objetivo_default">objetivo_desactivado</string>
+    <string name="tipo_frecuencia_default">info_audio_desactivado</string>
+    <string name="pantalla_orientacion_default">portrait</string>
+    <!-- Sumarios -->
+    <string name="usuario_summary">User information</string>
+    <string name="usuario_peso_summary">%d Kg.</string>
+    <string name="usuario_edad_summary">%d years old</string>
+    <string name="genero_m">Male</string>
+    <string name="genero_f">Female</string>
+    <string name="actividad_caminar">Walking</string>
+    <string name="actividad_correr">Running</string>
+    <string name="actividad_ciclismo">Cycling</string>
+    <string name="objetivo_desactivado">Without objective</string>
+    <string name="objetivo_tiempo">Time</string>
+    <string name="objetivo_distancia">Distance</string>
+    <string name="objetivo_vueltas">Number of laps</string>
+    <string name="objetivo_energia">Energy</string>
+    <string name="objetivo_summary">Select the activity objective</string>
+    <string name="objetivo_tiempo_summary">%1$02d:%2$02d</string>
+    <string name="objetivo_distancia_summary">%d Km.</string>
+    <string name="objetivo_vueltas_summary">%d laps</string>
+    <string name="objetivo_energia_summary">%d Kcal.</string>
+    <string name="info_audio_desactivado">Info audio off</string>
+    <string name="frecuencia_tiempo">Time frequency</string>
+    <string name="frecuencia_distancia">Distance frequency</string>
+    <string name="frecuencia_vueltas">Lap frequency</string>
+    <string name="frecuencia_energia">Energy frequency</string>
+    <string name="info_audio_summary">Select what information about the activity will be reproduced by audio</string>
+    <string name="frecuencia_tiempo_summary">%1$02d:%2$02d</string>
+    <string name="frecuencia_distancia_summary">%d Km.</string>
+    <string name="frecuencia_vueltas_summary">%d laps</string>
+    <string name="frecuencia_energia_summary">%d Kcal.</string>
+    <string name="gps_summary">Enable / Disable GPS</string>
+    <string name="pantalla_mantener_encendida_summary">Keep the screen on for the duration of the activity</string>
+    
+    
+    <string name="genero_masculino">genero_m</string>
+    <string name="genero_femenino">genero_f</string>
+    <string name="orientacion_portrait">portrait</string>
+    <string name="orientacion_landscape">landscape</string>
+    <string name="tts_info_tiempo">Time. %1$d hours, %2$d minutes, %3$d seconds.</string>
+    <string name="tts_info_distancia">Distance. %1$d kilometers, %2$d meters</string>
+    <string name="tts_info_vueltas">Number of laps. %d</string>
+    <string name="tts_info_energia">Energy. %d kilocalories</string>
+    
+    <!-- Detalle -->
+    <string name="error_datos">Couldn\'t get data of the route</string>
+    <string name="formato_fecha_detalle">dd/MM/yyyy</string>
+    <string name="titulo_confirmar_borrado">Delete activity</string>
+    <string name="confirmar_borrado">Are you sure you want to delete this activity?</string>
+    <string name="borrado_correcto">Activity has been successfully deleted</string>
+    <string name="error_borrado">Unable to delete activity</string>
+    
+    <!-- Gráfica -->
+    <string name="titulo_grafica">Graph of the activity</string>
+    <string name="titulo_eje_distancia">Distance ( Km. )</string>
+    <string name="titulo_eje_altitud">Altitude ( meters )</string>
+    <string name="titulo_eje_velocidad">Speed ( Km/h )</string>
+    <string name="leyenda_altitud">Altitude</string>
+    <string name="leyenda_velocidad">Speed</string>
+    
+    <!-- Menús -->
+    <!-- Principal -->
+    <string name="actividades_realizadas">List of activities</string>
+    <string name="configuracion">Settings</string>
+    <!-- Listado -->
+    <string name="ordenar">Sort</string>
+    <string name="ordenar_por_fecha">By date</string>
+    <string name="ordenar_por_tipo_actividad">By activity type</string>
+    <string name="ordenar_por_tiempo">By time</string>
+    <string name="ordenar_por_distancia">By distance</string>
+    <!-- Detalle -->
+    <string name="borrar_actividad">Delete activity</string>
+    <string name="mostrar_recorrido">Show route</string>
+    <string name="mostrar_graficas">Show graph</string>
+    
+    <!-- NumberPicker -->
+    <string name="dialog_set_number">Set</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_picker_title">Choose a number</string>
+    
+</resources>

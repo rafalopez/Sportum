@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gris_04"
+    android:orientation="vertical" >
+
+    
+    <!-- Cabecera -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/altura_encabezado"
+        android:background="@drawable/encabezado"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_encabezado" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_logo" />
+
+        <Button
+            android:id="@+id/ir_a_mapa_btn"
+            style="@style/boton_paginacion"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/boton_paginacion"
+            android:text="@string/btn_ir_a_mapa" />
+    </RelativeLayout>
+
+    <!-- Barra de información -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margen_seccion"
+        android:background="@drawable/seccion"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_barra_info" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/usuario_nombre_txt"
+                style="@style/texto_nombre_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/usuario_nombre_default" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="@dimen/ancho_separador_vertical"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margen_separador_vertical"
+                android:layout_marginRight="@dimen/margen_separador_vertical"
+                android:background="@color/gris_01" />
+
+            <ImageView
+                android:id="@+id/actividad_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_actividad_caminar" />
+
+            <View
+                android:layout_width="@dimen/ancho_separador_vertical"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margen_separador_vertical"
+                android:layout_marginRight="@dimen/margen_separador_vertical"
+                android:background="@color/gris_01" />
+
+            <ImageView
+                android:id="@+id/objetivo_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_objetivo_desactivado" />
+
+            <View
+                android:layout_width="@dimen/ancho_separador_vertical"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margen_separador_vertical"
+                android:layout_marginRight="@dimen/margen_separador_vertical"
+                android:background="@color/gris_01" />
+
+            <ImageView
+                android:id="@+id/info_audio_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_info_audio_desactivado" />
+
+            <View
+                android:layout_width="@dimen/ancho_separador_vertical"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margen_separador_vertical"
+                android:layout_marginRight="@dimen/margen_separador_vertical"
+                android:background="@color/gris_01" />
+
+            <ImageView
+                android:id="@+id/gps_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_gps_desactivado" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Contadores -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/margen_seccion"
+        android:layout_weight="0.2"
+        android:background="@drawable/seccion"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/titulo_seccion"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/texto_titulo_contador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_tiempo" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/contador_tiempo_txt"
+                style="@style/texto_contador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/contador_tiempo_ini" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/margen_seccion"
+        android:layout_weight="0.2"
+        android:background="@drawable/seccion"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/titulo_seccion"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/texto_titulo_contador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_distancia" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/contador_distancia_txt"
+                style="@style/texto_contador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/contador_distancia_ini" />
+
+            <TextView
+                style="@style/texto_unidades_contador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/contador_distancia_txt"
+                android:layout_toRightOf="@id/contador_distancia_txt"
+                android:layout_marginLeft="2dp"
+                android:text="@string/unidades_distancia" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/margen_seccion"
+        android:layout_weight="0.2"
+        android:background="@drawable/seccion"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/titulo_seccion"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/texto_titulo_contador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_velocidad" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/contador_velocidad_txt"
+                style="@style/texto_contador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/contador_velocidad_ini" />
+
+            <TextView
+                style="@style/texto_unidades_contador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/contador_velocidad_txt"
+                android:layout_toRightOf="@id/contador_velocidad_txt"
+                android:layout_marginLeft="2dp"
+                android:text="@string/unidades_velocidad" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.2">
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_margin="@dimen/margen_seccion"
+	        android:background="@drawable/seccion"
+	        android:orientation="vertical"
+	        android:layout_weight="0.5" >
+	
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/titulo_seccion"
+	            android:gravity="center"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                style="@style/texto_titulo_contador"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/titulo_vueltas" />
+	        </LinearLayout>
+	
+	        <RelativeLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" >
+	
+	            <TextView
+	                android:id="@+id/contador_vueltas_txt"
+	                style="@style/texto_contador"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerInParent="true"
+	                android:text="@string/contador_vueltas_ini" />
+	        </RelativeLayout>
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_margin="@dimen/margen_seccion"
+	        android:background="@drawable/seccion"
+	        android:orientation="vertical"
+	        android:layout_weight="0.5" >
+	
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/titulo_seccion"
+	            android:gravity="center"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                style="@style/texto_titulo_contador"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/titulo_energia" />
+	        </LinearLayout>
+	
+	        <RelativeLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" >
+	
+	            <TextView
+	                android:id="@+id/contador_energia_txt"
+	                style="@style/texto_contador"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerInParent="true"
+	                android:text="@string/contador_energia_ini" />
+	
+	            <TextView
+	                style="@style/texto_unidades_contador"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBaseline="@id/contador_energia_txt"
+	                android:layout_toRightOf="@id/contador_energia_txt"
+	                android:layout_marginLeft="2dp"
+	                android:text="@string/unidades_energia" />
+	        </RelativeLayout>
+	    </LinearLayout>
+    </LinearLayout>
+    
+
+    <!-- Botón inicio / parada -->
+
+    <Button
+        android:id="@+id/btn_comenzar"
+        style="@style/boton_comenzar_terminar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/margen_seccion"
+        android:layout_weight="0.2"
+        android:background="@drawable/boton_comenzar"
+        android:text="@string/btn_comenzar" />
+    
+    <Button
+        android:id="@+id/btn_terminar"
+        style="@style/boton_comenzar_terminar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/margen_seccion"
+        android:layout_weight="0.2"
+        android:background="@drawable/boton_terminar"
+        android:text="@string/btn_terminar"
+        android:visibility="gone" />
+
+</LinearLayout>

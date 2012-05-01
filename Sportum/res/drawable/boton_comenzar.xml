@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:state_pressed="true">
+        <shape>
+		    <gradient
+		        android:startColor="@color/boton_comenzar_02"
+		        android:centerColor="@color/boton_comenzar_02"
+		        android:endColor="@color/boton_comenzar_01"
+				android:angle="270" />
+			<corners android:radius="@dimen/radio_btn_comenzar_terminar" />
+			<padding android:left="@dimen/padding_btn_comenzar_terminar" android:top="@dimen/padding_btn_comenzar_terminar"
+				android:right="@dimen/padding_btn_comenzar_terminar" android:bottom="@dimen/padding_btn_comenzar_terminar" />
+			<stroke android:color="@color/boton_comenzar_02" android:width="@dimen/borde_btn_comenzar_terminar" />
+		</shape>
+	</item>
+
+	<item android:state_focused="true">
+	    <shape>
+		    <gradient
+		        android:startColor="@color/azul_claro"
+		        android:centerColor="@color/azul_oscuro"
+		        android:endColor="@color/azul_oscuro"
+				android:angle="270" />
+			<corners android:radius="@dimen/radio_btn_comenzar_terminar" />
+			<padding android:left="@dimen/padding_btn_comenzar_terminar" android:top="@dimen/padding_btn_comenzar_terminar"
+				android:right="@dimen/padding_btn_comenzar_terminar" android:bottom="@dimen/padding_btn_comenzar_terminar" />
+			<stroke android:color="@color/boton_comenzar_02" android:width="@dimen/borde_btn_comenzar_terminar" />
+		</shape>
+	</item>
+
+	<item>
+		<shape>
+		    <gradient
+		        android:startColor="@color/boton_comenzar_01"
+		        android:centerColor="@color/boton_comenzar_02"
+		        android:endColor="@color/boton_comenzar_02"
+				android:angle="270" />
+			<corners android:radius="@dimen/radio_btn_comenzar_terminar" />
+			<padding android:left="@dimen/padding_btn_comenzar_terminar" android:top="@dimen/padding_btn_comenzar_terminar"
+				android:right="@dimen/padding_btn_comenzar_terminar" android:bottom="@dimen/padding_btn_comenzar_terminar" />
+			<stroke android:color="@color/boton_comenzar_02" android:width="@dimen/borde_btn_comenzar_terminar" />
+		</shape>
+	</item>
+	
+
+</selector>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapa"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="0n-WTe8ZqBviZX-ktbpI2RUbVfqIE1lHA725hjg"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:id="@+id/encabezado"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/altura_encabezado"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/encabezado"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_encabezado" >
+
+        <Button
+            android:id="@+id/ir_a_contadores_btn"
+            style="@style/boton_paginacion"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/boton_paginacion"
+            android:text="@string/btn_ir_a_contadores" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contadores_mapa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/encabezado"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@drawable/seccion_mapa"
+            android:layout_margin="@dimen/margen_seccion_mapa" >
+
+            <TextView
+                android:id="@+id/titulo_contador_tiempo_mapa_txt"
+                style="@style/texto_titulo_contador_mapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/titulo_tiempo" />
+
+            <TextView
+                android:id="@+id/contador_tiempo_mapa_txt"
+                style="@style/texto_contador_mapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulo_contador_tiempo_mapa_txt"
+                android:layout_alignParentRight="true"
+                android:text="@string/contador_tiempo_ini" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/seccion_mapa"
+            android:layout_margin="@dimen/margen_seccion_mapa" >
+
+            <TextView
+                android:id="@+id/titulo_contador_distancia_mapa_txt"
+                style="@style/texto_titulo_contador_mapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/titulo_distancia" />
+            
+            <TextView
+                android:id="@+id/unidades_distancia_mapa_txt"
+                style="@style/texto_unidades_contador_mapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen_izq_unidades_contador_mapa"
+                android:layout_below="@id/titulo_contador_distancia_mapa_txt"
+                android:layout_alignParentRight="true"
+                android:text="@string/unidades_distancia" />
+            
+            <TextView
+                android:id="@+id/contador_distancia_mapa_txt"
+                style="@style/texto_contador_mapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulo_contador_distancia_mapa_txt"
+                android:layout_toLeftOf="@id/unidades_distancia_mapa_txt"
+                android:text="@string/contador_distancia_ini" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@drawable/seccion_mapa"
+            android:layout_margin="@dimen/margen_seccion_mapa" >
+
+            <TextView
+                android:id="@+id/titulo_contador_velocidad_mapa_txt"
+                style="@style/texto_titulo_contador_mapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/titulo_velocidad" />
+            
+            <TextView
+                android:id="@+id/unidades_velocidad_mapa_txt"
+                style="@style/texto_unidades_contador_mapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen_izq_unidades_contador_mapa"
+                android:layout_below="@id/titulo_contador_velocidad_mapa_txt"
+                android:layout_alignParentRight="true"
+                android:text="@string/unidades_velocidad" />
+            
+            <TextView
+                android:id="@+id/contador_velocidad_mapa_txt"
+                style="@style/texto_contador_mapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulo_contador_velocidad_mapa_txt"
+                android:layout_toLeftOf="@id/unidades_velocidad_mapa_txt"
+                android:text="@string/contador_velocidad_ini" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/candado_img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/contadores_mapa"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_candado_cerrado" />
+
+    <ImageButton
+        android:id="@+id/satelite_img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/candado_img_btn"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_satelite_desactivado" />
+
+    <ZoomControls
+        android:id="@+id/controles_zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

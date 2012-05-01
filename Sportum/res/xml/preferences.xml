@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    				xmlns:picker="http://schemas.android.com/apk/res/com.rlo.sportum" >
+
+    <PreferenceCategory android:title="@string/usuario_title" >
+
+        <PreferenceScreen
+            android:title="@string/usuario_title"
+            android:summary="@string/usuario_summary" >
+
+            <EditTextPreference
+                android:key="@string/usuario_nombre_key"
+                android:title="@string/usuario_nombre_title"
+                android:defaultValue="@string/usuario_nombre_default" />
+
+            <ListPreference
+                android:key="@string/usuario_genero_key"
+                android:title="@string/usuario_genero_title"
+                android:entries="@array/generos_valor"
+                android:entryValues="@array/generos_clave"
+                android:defaultValue="@string/usuario_genero_default" />
+
+            <com.rlo.sportum.util.numberpicker.NumberPickerPreference
+	            android:key="@string/usuario_peso_key"
+	            android:title="@string/usuario_peso_title"
+	            picker:startRange="@integer/usuario_peso_min"
+	            picker:endRange="@integer/usuario_peso_max"
+	            picker:defaultValue="@integer/usuario_peso_default" />
+
+            <Preference
+                android:key="@string/usuario_edad_key"
+                android:title="@string/usuario_edad_title" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/actividad_title" >
+
+        <ListPreference
+            android:key="@string/tipo_actividad_key"
+            android:title="@string/tipo_actividad_title"
+            android:entries="@array/tipos_actividad_valor"
+            android:entryValues="@array/tipos_actividad_clave"
+            android:defaultValue="@string/tipo_actividad_default" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/objetivo_title" >
+        
+        <PreferenceScreen
+            android:title="@string/objetivo_title"
+            android:summary="@string/objetivo_summary" >
+            
+            <ListPreference
+                android:key="@string/tipo_objetivo_key"
+                android:title="@string/tipo_objetivo_title"
+                android:entries="@array/tipos_objetivo_valor"
+            	android:entryValues="@array/tipos_objetivo_clave"
+            	android:defaultValue="@string/tipo_objetivo_default" />
+            
+            <Preference
+                android:key="@string/objetivo_tiempo_key"
+                android:title="@string/objetivo_tiempo_title" />
+            
+            <com.rlo.sportum.util.numberpicker.NumberPickerPreference
+	            android:key="@string/objetivo_distancia_key"
+	            android:title="@string/objetivo_distancia_title"
+	            picker:startRange="@integer/objetivo_distancia_min"
+	            picker:endRange="@integer/objetivo_distancia_max"
+	            picker:defaultValue="@integer/objetivo_distancia_default" />
+            
+            <com.rlo.sportum.util.numberpicker.NumberPickerPreference
+	            android:key="@string/objetivo_vueltas_key"
+	            android:title="@string/objetivo_vueltas_title"
+	            picker:startRange="@integer/objetivo_vueltas_min"
+	            picker:endRange="@integer/objetivo_vueltas_max"
+	            picker:defaultValue="@integer/objetivo_vueltas_default" />
+            
+            <com.rlo.sportum.util.numberpicker.NumberPickerPreference
+	            android:key="@string/objetivo_energia_key"
+	            android:title="@string/objetivo_energia_title"
+	            picker:startRange="@integer/objetivo_energia_min"
+	            picker:endRange="@integer/objetivo_energia_max"
+	            picker:defaultValue="@integer/objetivo_energia_default" />
+            </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/info_audio_title" >
+        
+        <PreferenceScreen
+            android:title="@string/info_audio_title"
+            android:summary="@string/info_audio_summary" >
+            
+            <PreferenceCategory android:title="@string/info_audio_cuando_title" >
+	            <ListPreference
+	                android:key="@string/tipo_frecuencia_key"
+	                android:title="@string/tipo_frecuencia_title"
+	                android:entries="@array/tipos_frecuencia_valor"
+	            	android:entryValues="@array/tipos_frecuencia_clave"
+	            	android:defaultValue="@string/tipo_frecuencia_default" />
+	            
+	            <Preference
+	                android:key="@string/frecuencia_tiempo_key"
+	                android:title="@string/frecuencia_tiempo_title" />
+	            
+	            <com.rlo.sportum.util.numberpicker.NumberPickerPreference
+		            android:key="@string/frecuencia_distancia_key"
+		            android:title="@string/frecuencia_distancia_title"
+		            picker:startRange="@integer/frecuencia_distancia_min"
+		            picker:endRange="@integer/frecuencia_distancia_max"
+		            picker:defaultValue="@integer/frecuencia_distancia_default" />
+	            
+	            <com.rlo.sportum.util.numberpicker.NumberPickerPreference
+		            android:key="@string/frecuencia_vueltas_key"
+		            android:title="@string/frecuencia_vueltas_title"
+		            picker:startRange="@integer/frecuencia_vueltas_min"
+		            picker:endRange="@integer/frecuencia_vueltas_max"
+		            picker:defaultValue="@integer/frecuencia_vueltas_default" />
+	            
+	            <com.rlo.sportum.util.numberpicker.NumberPickerPreference
+		            android:key="@string/frecuencia_energia_key"
+		            android:title="@string/frecuencia_energia_title"
+		            picker:startRange="@integer/frecuencia_energia_min"
+		            picker:endRange="@integer/frecuencia_energia_max"
+		            picker:defaultValue="@integer/frecuencia_energia_default" />
+	        </PreferenceCategory>
+	        <PreferenceCategory android:title="@string/info_audio_que_title" >
+	            
+	            <CheckBoxPreference
+	                android:key="@string/info_tiempo_key"
+	                android:title="@string/info_tiempo_title"
+	                android:defaultValue="@bool/info_tiempo_default" />
+	            
+	            <CheckBoxPreference
+	                android:key="@string/info_distancia_key"
+	                android:title="@string/info_distancia_title"
+	                android:defaultValue="@bool/info_distancia_default" />
+	            
+	            <CheckBoxPreference
+	                android:key="@string/info_vueltas_key"
+	                android:title="@string/info_vueltas_title"
+	                android:defaultValue="@bool/info_vueltas_default" />
+	            
+	            <CheckBoxPreference
+	                android:key="@string/info_energia_key"
+	                android:title="@string/info_energia_title"
+	                android:defaultValue="@bool/info_energia_default" />
+	        </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/otras_opciones_title" >
+        <Preference
+            android:key="@string/gps_key"
+            android:title="@string/gps_title"
+            android:summary="@string/gps_summary" />
+        <ListPreference
+            android:key="@string/pantalla_orientacion_key"
+            android:title="@string/pantalla_orientacion_title"
+            android:entries="@array/pantalla_orientacion_valor"
+           	android:entryValues="@array/pantalla_orientacion_clave"
+           	android:defaultValue="@string/pantalla_orientacion_default" />
+        <CheckBoxPreference
+            android:key="@string/pantalla_mantener_encendida_key"
+            android:title="@string/pantalla_mantener_encendida_title"
+            android:summary="@string/pantalla_mantener_encendida_summary"
+            android:defaultValue="@bool/pantalla_mantener_encendida_default" />
+        <CheckBoxPreference
+            android:key="@string/pantalla_completa_key"
+            android:title="@string/pantalla_completa_title"
+            android:defaultValue="@bool/pantalla_completa_default" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/acerca_de_title" >
+        <Preference
+            android:key="@string/acerca_de_key"
+            android:title="@string/acerca_de_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

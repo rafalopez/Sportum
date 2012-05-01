@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+		android:id="@+id/borrar_actividad"
+		android:title="@string/borrar_actividad"
+		android:icon="@drawable/ic_menu_delete" />
+    <item
+    	android:id="@+id/mostrar_recorrido"
+    	android:title="@string/mostrar_recorrido"
+    	android:icon="@drawable/ic_menu_globe" />
+    <item
+    	android:id="@+id/mostrar_grafica"
+    	android:title="@string/mostrar_graficas"
+    	android:icon="@drawable/ic_menu_chart" />
+
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="info_tiempo_default" type="bool">true</item>
+    <item name="info_distancia_default" type="bool">true</item>
+    <item name="info_vueltas_default" type="bool">false</item>
+    <item name="info_energia_default" type="bool">false</item>
+    
+    <item name="pantalla_mantener_encendida_default" type="bool">false</item>
+    <item name="pantalla_completa_default" type="bool">false</item>
+</resources>

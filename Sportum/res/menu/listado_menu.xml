@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/ordenar" android:icon="@drawable/ic_menu_sort_by_size" android:title="@string/ordenar">
+		<menu>
+			<group android:checkableBehavior="single">
+				<item android:id="@+id/ordenar_por_fecha" android:title="@string/ordenar_por_fecha" android:checked="true" />
+				<item android:id="@+id/ordenar_por_tipo_actividad" android:title="@string/ordenar_por_tipo_actividad" />
+				<item android:id="@+id/ordenar_por_tiempo" android:title="@string/ordenar_por_tiempo" />
+				<item android:id="@+id/ordenar_por_distancia" android:title="@string/ordenar_por_distancia" />
+			</group>
+		</menu>
+	</item>
+</menu>

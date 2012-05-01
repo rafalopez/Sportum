@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 70 Kg. -->
+    <item name="usuario_peso_default" type="integer">70</item>
+    <!-- Año 2000 -->
+    <item name="usuario_fecha_nacimiento_anyo_default" type="integer">2000</item>
+    <!-- Mes Enero -->
+    <item name="usuario_fecha_nacimiento_mes_default" type="integer">0</item>
+    <!-- Día 1 -->
+    <item name="usuario_fecha_nacimiento_dia_default" type="integer">1</item>
+    <!-- 0 horas -->
+    <item name="objetivo_horas_default" type="integer">0</item>
+    <!-- 30 minutos -->
+    <item name="objetivo_minutos_default" type="integer">30</item>
+    <!-- 5000 metros -->
+    <item name="objetivo_distancia_default" type="integer">5</item>
+    <!-- 5 vueltas -->
+    <item name="objetivo_vueltas_default" type="integer">5</item>
+    <!-- 500 Kcal. -->
+    <item name="objetivo_energia_default" type="integer">500</item>
+    <!-- 0 horas -->
+    <item name="frecuencia_horas_default" type="integer">0</item>
+    <!-- 5 minutos -->
+    <item name="frecuencia_minutos_default" type="integer">5</item>
+    <!-- 1000 metros -->
+    <item name="frecuencia_distancia_default" type="integer">1</item>
+    <!-- 1 vuelta -->
+    <item name="frecuencia_vueltas_default" type="integer">1</item>
+    <!-- 100 Kcal. -->
+    <item name="frecuencia_energia_default" type="integer">100</item>
+    
+    <item name="usuario_nombre_max" type="integer">20</item>
+    <item name="usuario_peso_min" type="integer">1</item>
+    <item name="usuario_peso_max" type="integer">1000</item>
+    <item name="objetivo_horas_min" type="integer">0</item>
+    <item name="objetivo_horas_max" type="integer">100</item>
+    <item name="objetivo_minutos_min" type="integer">0</item>
+    <item name="objetivo_minutos_max" type="integer">59</item>
+    <item name="objetivo_distancia_min" type="integer">1</item>
+    <item name="objetivo_distancia_max" type="integer">1000</item>
+    <item name="objetivo_vueltas_min" type="integer">1</item>
+    <item name="objetivo_vueltas_max" type="integer">1000</item>
+    <item name="objetivo_energia_min" type="integer">1</item>
+    <item name="objetivo_energia_max" type="integer">10000</item>
+    <item name="frecuencia_horas_min" type="integer">0</item>
+    <item name="frecuencia_horas_max" type="integer">100</item>
+    <item name="frecuencia_minutos_min" type="integer">0</item>
+    <item name="frecuencia_minutos_max" type="integer">59</item>
+    <item name="frecuencia_distancia_min" type="integer">1</item>
+    <item name="frecuencia_distancia_max" type="integer">1000</item>
+    <item name="frecuencia_vueltas_min" type="integer">1</item>
+    <item name="frecuencia_vueltas_max" type="integer">1000</item>
+    <item name="frecuencia_energia_min" type="integer">1</item>
+    <item name="frecuencia_energia_max" type="integer">10000</item>
+    
+    <item name="radio_salida_vuelta" type="integer">100</item>
+    <item name="radio_entrada_vuelta" type="integer">50</item>
+    
+    <item name="gasto_calorico_actividad_caminar" type="integer">69</item>
+    <item name="gasto_calorico_actividad_ciclismo" type="integer">140</item>
+    <item name="gasto_calorico_actividad_correr" type="integer">200</item>
+    
+    <item name="min_distancia_actualizacion_gps" type="integer">20</item>
+    <item name="min_tiempo_actualizacion_gps" type="integer">5000</item>
+    
+</resources>

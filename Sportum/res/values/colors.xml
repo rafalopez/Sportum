@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="blanco">#fff</color>
+    
+    <color name="gris_01">#ccc</color>
+    <color name="gris_02">#aaa</color>
+    <color name="gris_03">#999</color>
+    <color name="gris_04">#666</color>
+    <color name="gris_05">#333</color>
+    
+    <color name="negro">#000</color>
+    
+    <color name="azul_claro">#33b5e5</color>
+    <color name="azul_oscuro">#0099cc</color>
+    <color name="violeta_claro">#a6c</color>
+    <color name="violeta_oscuro">#93c</color>
+    <color name="verde_claro">#9c0</color>
+    <color name="verde_oscuro">#690</color>
+    <color name="naranja_claro">#fb3</color>
+    <color name="naranja_oscuro">#f80</color>
+    <color name="rojo_claro">#f44</color>
+    <color name="rojo_oscuro">#c00</color>
+    
+    <color name="boton_comenzar_01">#f90</color>
+    <color name="boton_comenzar_02">#630</color>
+    
+    <color name="boton_finalizar_01">#f44</color>
+    <color name="boton_finalizar_02">#900</color>
+    
+    <color name="boton_paginacion_01">@color/negro</color>
+    <color name="boton_paginacion_02">@color/gris_04</color>
+    
+</resources>

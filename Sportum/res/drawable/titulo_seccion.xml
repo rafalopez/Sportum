@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <gradient
+        android:startColor="@color/negro"
+        android:endColor="@color/gris_04"
+        android:angle="270" />
+
+    <corners
+        android:radius="@dimen/radio_titulo_seccion"
+        android:topLeftRadius="@dimen/radio_sup_izq_titulo_seccion"
+        android:topRightRadius="@dimen/radio_sup_der_titulo_seccion"
+        android:bottomLeftRadius="@dimen/radio_inf_izq_titulo_seccion"
+        android:bottomRightRadius="@dimen/radio_inf_der_titulo_seccion"/>
+
+    <padding
+        android:bottom="@dimen/padding_titulo_seccion"
+        android:left="@dimen/padding_titulo_seccion"
+        android:right="@dimen/padding_titulo_seccion"
+        android:top="@dimen/padding_titulo_seccion" />
+
+</shape>

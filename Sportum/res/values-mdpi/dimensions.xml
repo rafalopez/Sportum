@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<dimen name="altura_encabezado">36dp</dimen>
+	<dimen name="padding_encabezado">4dp</dimen>
+	
+	<dimen name="radio_btn_paginacion">8dp</dimen>
+    <dimen name="padding_btn_paginacion">2dp</dimen>
+    <dimen name="padding_izq_btn_paginacion">10dp</dimen>
+    <dimen name="padding_der_btn_paginacion">10dp</dimen>
+    <dimen name="padding_sup_btn_paginacion">2dp</dimen>
+    <dimen name="padding_inf_btn_paginacion">2dp</dimen>
+    <dimen name="tamano_texto_btn_paginacion">12sp</dimen>
+	
+	<dimen name="padding_barra_info">4dp</dimen>
+	
+	<dimen name="ancho_separador_vertical">2dp</dimen>
+	<dimen name="margen_separador_vertical">2dp</dimen>
+	
+	<dimen name="tamano_texto_nombre_usuario">12sp</dimen>
+	
+	<dimen name="padding_titulo_seccion">2dp</dimen>
+	<dimen name="radio_titulo_seccion">10dp</dimen>
+	<dimen name="radio_sup_izq_titulo_seccion">10dp</dimen>
+	<dimen name="radio_sup_der_titulo_seccion">10dp</dimen>
+	<dimen name="radio_inf_izq_titulo_seccion">0dp</dimen>
+	<dimen name="radio_inf_der_titulo_seccion">0dp</dimen>
+    <dimen name="margen_seccion">2dp</dimen>
+    <dimen name="padding_seccion">2dp</dimen>
+    <dimen name="radio_seccion">10dp</dimen>
+	
+    <dimen name="tamano_texto_contador">36sp</dimen>
+    <dimen name="tamano_texto_unidades_contador">14sp</dimen>
+    <dimen name="tamano_texto_titulo_contador">12sp</dimen>
+    
+    <dimen name="radio_btn_comenzar_terminar">10dp</dimen>
+    <dimen name="padding_btn_comenzar_terminar">8dp</dimen>
+    <dimen name="borde_btn_comenzar_terminar">3dp</dimen>
+    <dimen name="tamano_texto_boton_comenzar_terminar">24sp</dimen>
+    
+    <dimen name="radio_seccion_mapa">5dp</dimen>
+    <dimen name="padding_seccion_mapa">2dp</dimen>
+    <dimen name="margen_seccion_mapa">2dp</dimen>
+    <dimen name="margen_izq_unidades_contador_mapa">4dp</dimen>
+
+</resources>

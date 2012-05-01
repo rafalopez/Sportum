@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			xmlns:picker="http://schemas.android.com/apk/res/com.rlo.sportum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center" >
+
+    <com.rlo.sportum.util.numberpicker.NumberPicker
+        android:id="@+id/frecuencia_horas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        picker:startRange="@integer/frecuencia_horas_min"
+        picker:endRange="@integer/frecuencia_horas_max"
+        picker:defaultValue="@integer/frecuencia_horas_default" />
+
+    <com.rlo.sportum.util.numberpicker.NumberPicker
+        android:id="@+id/frecuencia_minutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        picker:startRange="@integer/frecuencia_minutos_min"
+        picker:endRange="@integer/frecuencia_minutos_max"
+        picker:defaultValue="@integer/frecuencia_minutos_default" />
+
+</LinearLayout>

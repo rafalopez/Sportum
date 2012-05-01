@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="texto_nombre_usuario" parent="@android:style/Widget.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/tamano_texto_nombre_usuario</item>
+        <item name="android:textColor">@color/gris_04</item>
+    </style>
+    
+    <style name="texto_titulo_contador" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">@dimen/tamano_texto_titulo_contador</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="texto_contador" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/gris_05</item>
+        <item name="android:textSize">@dimen/tamano_texto_contador</item>
+        <item name="android:textStyle">bold</item>
+        
+        <item name="android:shadowDx">3.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">@color/gris_03</item>
+    </style>
+    
+    <style name="texto_unidades_contador" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/gris_04</item>
+        <item name="android:textSize">@dimen/tamano_texto_unidades_contador</item>
+        <item name="android:textStyle">bold</item>
+        
+        <item name="android:shadowDx">3.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">@color/gris_02</item>
+    </style>
+
+    <style name="boton_comenzar_terminar" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">@dimen/tamano_texto_boton_comenzar_terminar</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="texto_titulo_contador_mapa" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/gris_01</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="texto_contador_mapa" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="texto_unidades_contador_mapa" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="boton_paginacion" parent="@android:style/Widget.Button">
+        <item name="android:paddingLeft">@dimen/padding_izq_btn_paginacion</item>
+        <item name="android:paddingRight">@dimen/padding_der_btn_paginacion</item>
+        <item name="android:paddingTop">@dimen/padding_sup_btn_paginacion</item>
+        <item name="android:paddingBottom">@dimen/padding_inf_btn_paginacion</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gris_01</item>
+        <item name="android:textSize">@dimen/tamano_texto_btn_paginacion</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="texto_titulo_contador_detalle" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/gris_01</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="texto_contador_detalle" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="texto_fecha_listado" parent="@style/texto_contador_detalle" />
+    <style name="texto_tiempo_listado" parent="@style/texto_titulo_contador_detalle" />
+    
+    <!-- NumberPicker -->
+    <style name="NumberPickerInputText" parent="@android:style/TextAppearance.Large.Inverse">
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="NumberPickerUpButton" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/numberpicker_up_btn</item>
+        <item name="android:paddingTop">22dip</item>
+        <item name="android:paddingBottom">22dip</item>
+    </style>
+
+    <style name="NumberPickerDownButton" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/numberpicker_down_btn</item>
+        <item name="android:paddingTop">22dip</item>
+        <item name="android:paddingBottom">22dip</item>
+    </style>
+
+    <style name="NumberPickerInputText" parent="@android:style/Widget.EditText">
+        <item name="android:textAppearance">@style/NumberPickerInputText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/numberpicker_input</item>
+    </style>
+</resources>

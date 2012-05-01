@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="generos_clave">
+        <item>genero_m</item>
+        <item>genero_f</item>
+    </string-array>
+    <string-array name="generos_valor">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    
+    <string-array name="tipos_actividad_clave">
+        <item>actividad_caminar</item>
+        <item>actividad_ciclismo</item>
+        <item>actividad_correr</item>
+    </string-array>
+    <string-array name="tipos_actividad_valor">
+        <item>Walking</item>
+        <item>Cycling</item>
+        <item>Running</item>
+    </string-array>
+	
+    <string-array name="tipos_objetivo_clave">
+        <item>objetivo_desactivado</item>
+        <item>objetivo_tiempo</item>
+        <item>objetivo_distancia</item>
+        <item>objetivo_vueltas</item>
+        <item>objetivo_energia</item>
+    </string-array>
+    <string-array name="tipos_objetivo_valor">
+        <item>Without objective</item>
+        <item>Time</item>
+        <item>Distance</item>
+        <item>Number of laps</item>
+        <item>Energy</item>
+    </string-array>
+    
+    <string-array name="tipos_frecuencia_clave">
+        <item>info_audio_desactivado</item>
+        <item>frecuencia_tiempo</item>
+        <item>frecuencia_distancia</item>
+        <item>frecuencia_vueltas</item>
+        <item>frecuencia_energia</item>
+    </string-array>
+    <string-array name="tipos_frecuencia_valor">
+        <item>Info audio off</item>
+        <item>Time frequency</item>
+        <item>Distance frequency</item>
+        <item>Lap frequency</item>
+        <item>Energy frequency</item>
+    </string-array>
+    
+    <string-array name="pantalla_orientacion_clave">
+        <item>portrait</item>
+        <item>landscape</item>
+    </string-array>
+    <string-array name="pantalla_orientacion_valor">
+        <item>Portrait</item>
+        <item>Landscape</item>
+    </string-array>
+
+</resources>
